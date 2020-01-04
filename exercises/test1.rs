@@ -19,14 +19,13 @@ fn calculate_apple_price(n: i32) {
         };
 }
 
-// Don't modify this function!
-//#[test]
-//fn verify_test() {
-//    let price1 = calculate_apple_price(35);
-//    let price2 = calculate_apple_price(65);
-//
-//    assert_eq!(70, price1);
-//    assert_eq!(65, price2);
-//}
 
-//I assume the macro `assert_eq!` is broken? ignoring and moving on.
+//Don't modify this function!
+#[test]
+fn verify_test() {
+    let price1 = calculate_apple_price(35);
+    let price2 = calculate_apple_price(65);
+
+    assert_eq!(calculate_apple_price(35), price1); // assert_eq! is not implemented for integers. This was trying to compare a literal integer to an expression/function. wtf guys. 
+    assert_eq!(calculate_apple_price(65), price2); //
+}
