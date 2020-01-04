@@ -1,7 +1,7 @@
 // enums3.rs
 // Address all the TODOs to make the tests pass!
 
-// I AM NOT DONE
+// I AM _NOT DONE
 
 enum Message {
     // TODO: implement the message variant types based on their usage below
@@ -49,7 +49,9 @@ impl State {
             Message::Echo(echo) => State::echo(self, String::from(echo)),
 
             Message::Move{x, y} => State::move_position(self, Point {x, y}), 
-                                                            /* ^^^^^^^^^^ Tricksy little hobbitses */
+                                                            /* ^^^^^^^^^^ This is important to understand coming from a higher level language
+                                                              You have to specify that the incoming data is part of a Point struct. 
+                                                              The compiler won't just assume that the incoming type is a Struct */
             Message::Quit => State::quit(self)
         }
     }
