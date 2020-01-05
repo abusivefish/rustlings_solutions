@@ -1,0 +1,1 @@
+/home/ui-claw/Documents/rust/rustlings_solutions/target/debug/rustlings: /home/ui-claw/Documents/rust/rustlings_solutions/src/exercise.rs /home/ui-claw/Documents/rust/rustlings_solutions/src/main.rs /home/ui-claw/Documents/rust/rustlings_solutions/src/run.rs /home/ui-claw/Documents/rust/rustlings_solutions/src/verify.rs
