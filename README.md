@@ -1,4 +1,4 @@
-A collection of solutions to hone my chops. Bear in mind, I'm an idiot. Don't copy my solutoions.
+My solutions to rustlings 2.1.0.
 
 ![crab pet](https://i.imgur.com/LbZJgmm.gif)
 
