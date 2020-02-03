@@ -4,11 +4,12 @@
 // Why not? What should we do to fix it?
 // Execute `rustlings hint errors3` for hints!
 
-// I AM NOT DONE
+// I AM _NOT DONE
 
 use std::num::ParseIntError;
+use std::error::Error;
 
-fn main() {
+fn main() -> Result<(), Box<dyn Error>> {
     let mut tokens = 100;
     let pretend_user_input = "8";
 
@@ -19,7 +20,8 @@ fn main() {
     } else {
         tokens -= cost;
         println!("You now have {} tokens.", tokens);
-    }
+    };
+    Ok(()) // retun Ok(()) - might be _safer_ to match on the return of our if, then return an expression based on that?
 }
 
 pub fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
