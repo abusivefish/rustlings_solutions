@@ -15,13 +15,6 @@ pub fn capitalize_first(input: &str) -> String {
     }
 }
 
-fn main() {
-    let words = vec!["hello", "world"];
-    for word in words.iter() {
-        capitalize_first(word).collect::<String>();
-    }
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -43,16 +36,21 @@ mod tests {
     fn test_iterate_string_vec() {
         let words = vec!["hello", "world"];
 
-        //let capitalized_words: Vec<String> = for word in words.iter() {
-        //    capitalize_first(word);
-        //};
-        //assert_eq!(capitalized_words, ["Hello", "World"]);
+        let mut capitalized_words = Vec::new();
+        for word in words.iter() {
+            capitalized_words.push(capitalize_first(word));
+        }
+        assert_eq!(capitalized_words, ["Hello", "World"]);
     }
     #[test]
     fn test_iterate_into_string() {
         let words = vec!["hello", " ", "world"];
-        //let capitalized_words = // TODO
-        //    assert_eq!(capitalized_words, "Hello World");
+
+        let capitalized_words = String::new();
+        for word in words.iter() {
+            capitalized_words;
+        }
+        assert_eq!(capitalized_words, "Hello World");
     }
 }
 /*
